@@ -47,7 +47,7 @@ seller:seller
 
   li{
     flex:1;
-    line-height:3em;
+    line-height:2.2em;
     text-align: center;
     color:#626262;
   }

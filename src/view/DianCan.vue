@@ -91,7 +91,7 @@ export default {
     return {
       food:{},
       goods:goods,
-   current:"热销榜"
+      current:goods[0].name
     }
 
   },
@@ -163,7 +163,7 @@ export default {
 @import '../common/style/styles.scss';
 .diancan{
   position: fixed;
-  top:11.2rem;
+  top:8.3rem;
   left: 0;
   right: 0;
   bottom: px2rem(80px);

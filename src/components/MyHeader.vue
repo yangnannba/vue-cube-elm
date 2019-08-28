@@ -89,7 +89,7 @@ export default {
 
   .logo{
       width: 100%;
-      height: px2rem(170px);
+      height: px2rem(90px);
       background: rgba(0, 0, 0,0.5) ;
       margin-bottom: 1rem;
       position: relative;
@@ -111,9 +111,9 @@ export default {
       }
     img{
       position: relative;
-      top:1.6rem;
-      width:  px2rem(128px);
-      height:  px2rem(128px);
+      top:.6rem;
+      width:  px2rem(80px);
+      height:  px2rem(80px);
       margin: 0 auto;
       @include radius(0.1rem);
 
