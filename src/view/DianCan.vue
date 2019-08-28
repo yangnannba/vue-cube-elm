@@ -84,13 +84,13 @@ import { createAPI, BetterScroll, Locale } from 'cube-ui'
 import ShopCart from '../components/ShopCart'
 import CartControl from "../components/CartControl"
 import FoodDetails from "../components/FoodDetails"
-
+import goods from "../goods.json"
 export default {
   name: 'diancan',
   data:function(){
     return {
       food:{},
-      goods:[],
+      goods:goods,
    current:"热销榜"
     }
 
@@ -153,19 +153,6 @@ export default {
     ShopCart,
     CartControl,
     FoodDetails
-
-
-  },
-  created(){
-/*
-          this.$nextTick(() => {
-               this.initscroll();
-          });*/
-
-    this.$http.get("/api/goods.json").then(res=>{
-       this.goods=res.data.goods
-    })
-
 
 
   }

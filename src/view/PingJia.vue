@@ -49,6 +49,7 @@
 <script>
 import split from "../components/split"
 import rate from "../components/rate"
+import ratings from '../ratings.json'
 export default {
   name: 'pingjia',
   props:["seller"],
@@ -56,7 +57,7 @@ export default {
     return {
       rateType:2,
       onlyContent:true,
-      ratings:[],
+      ratings:ratings,
             justify:false,
 
       disabled:true
@@ -116,16 +117,6 @@ export default {
   components:{
     split,
     rate
-  },
-    created(){
-
-
-    this.$http.get("/api/ratings.json").then(res=>{
-this.ratings=res.data.ratings
-    })
-
-
-
   }
 }
 </script>

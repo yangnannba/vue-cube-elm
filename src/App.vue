@@ -15,6 +15,7 @@
 
 <script>
 import MyHeader from './components/MyHeader'
+import seller from './seller.json'
 export default {
   name: 'App',
   components:{
@@ -22,7 +23,7 @@ export default {
   },
   data(){
     return {
-seller:{}
+seller:seller
     }
       
   },
@@ -32,12 +33,7 @@ seller:{}
       return this.$store.state.seller
     }
   },*/
-  created(){
-    this.$http.get("/api/seller.json").then(res=>{
- 
-this.seller=res.data.seller
-    })
-  }
+
 }
 </script>
 
