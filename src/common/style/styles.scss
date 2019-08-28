@@ -1,0 +1,28 @@
+@charset "utf-8";
+@function px2rem($px){
+    $rem:40px;
+    @return ($px/$rem)+rem;
+}
+$color:#006cb6;
+
+@mixin radius($val){
+    -webkit-border-radius:$val;    
+    -moz-border-radius:$val;   
+    border-radius:$val;
+}
+@mixin boxshodow($val){
+    -webkit-box-shadow: $val;    
+    -moz-box-shadow: $val;    
+    box-shadow: $val;
+}
+%clear{
+      content:"";
+        height:0;
+        display: block;
+        clear: both;
+        visibility: hidden;
+}
+%font-size-no{
+    font-size: 0;
+    -webkit-text-size-adjust: none;
+}
